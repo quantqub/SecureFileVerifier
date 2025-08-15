@@ -1,0 +1,50 @@
+# ==============================
+# SecureFileVerifier .gitignore
+# ==============================
+
+# ---- Test Environments ----
+test_*/
+*_env/
+
+# ---- GPG Keyring ----
+# Keep verification keys isolated & private
+trustedkeys.gpg
+trustedkeys.gpg.lock
+trustedkeys.gpg~
+
+# ---- Temporary & Cache Files ----
+*.tmp
+*.swp
+*.swo
+
+# ---- Logs ----
+*.log
+
+# ---- Editor Directories & Files ----
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# ---- OS Generated Files ----
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# ---- Downloaded Verification Targets ----
+# Ignore verified files/signatures/checksums from tests
+*.sig
+*.asc
+*.sha256
+*.sha512
+*.AppImage
+*.tar.gz
+*.zip
+
+# ---- JSON Output (Automation) ----
+*.json
+
